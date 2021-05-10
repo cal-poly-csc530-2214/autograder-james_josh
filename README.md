@@ -19,5 +19,7 @@ text
 
 ### Extra Resources
 We used the following resources to better our understanding of the technologies involved with this paper:
+
 https://people.csail.mit.edu/asolar/SynthesisCourse/Lecture7.htm
+
 https://people.csail.mit.edu/asolar/manual.pdf
