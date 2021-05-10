@@ -1,0 +1,4 @@
+harness int[n] computeDeriv(int n, int[n] in){
+    int t = x * ??;
+    assert t == x + x;
+}
