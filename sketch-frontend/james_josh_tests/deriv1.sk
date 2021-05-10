@@ -1,23 +1,21 @@
-harness void studentDeriv(int n, int[n] in){
-    int[n] deriv;
-    deriv[0] = 0;
+harness int[n] studentDeriv(int n, int[n] in){
+    int[n] deriv = {};
     int zero = 0;
     if(n == 1){
-        assert deriv[??:??] == correctDeriv(n, in);
+        return {0};
     }
-    for(int e=0; e<n; ++e){
-        if(in[e] == 0){
+    for(int i=0; i<n; ++i){
+        if(in[i] == 0 || ??){
             zero += 1;
         }else{
-            deriv[e] = in[e]*e;
+            deriv[i] = in[i]*i;
         }
-    }
-    
-    assert deriv[??:??] == correctDeriv(n, in);
+    } 
+    return deriv[1:n-1];
 }
 
 int[n] correctDeriv(int n, int[n] in){
-    int[n] result = in;
+    int[n] result = {};
     for(int i=0; i<n; ++i){
         result[i] = in[i]*i;
     }
@@ -26,4 +24,8 @@ int[n] correctDeriv(int n, int[n] in){
     }else{
         return result[1:n-1];
     }
+}
+
+void driver(int n, int[n] in){
+    assert correctDeriv(n, in) == correctDeriv(n, in);
 }
